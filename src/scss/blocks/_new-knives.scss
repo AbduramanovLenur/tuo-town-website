@@ -1,0 +1,34 @@
+@import "mixins";
+
+.new-knives {
+    background-color: var(--gray);
+    padding: 25px 0 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    &__title {
+        @include title;
+        --size: 27px;
+        --height: 1.55;
+        --transform: none;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto 17px;
+    }
+    &__form {
+        margin-bottom: 50px;
+    }
+    &__input {
+        @include input;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-knives {
+        padding: 25px 0 40px;
+        &__title {
+            --size: 24px;
+        }
+        &__form {
+            margin-bottom: 30px;
+        }
+    }
+}

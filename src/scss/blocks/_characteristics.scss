@@ -1,0 +1,58 @@
+.characteristics {
+    background-color: var(--dark-gray);
+    padding: 90px 0;
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 250px;
+    }
+    &__images {
+        border-radius: 15px;
+    }
+    &__box {
+        max-width: 419px;
+        width: 100%;
+    }
+    &__title {
+        font-family: "Jura";
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.16;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #C80000;
+        padding-bottom: 6px;
+        max-width: 195px;
+    }
+    &__list {
+        max-width: 419px;
+    }
+    &__item {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #4F4F4F;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        &-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+            max-width: 419px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .characteristics {
+        &__inner {
+            gap: 100px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .characteristics {
+        &__inner {
+            flex-direction: column;
+            gap: 60px;
+        }
+    }
+}

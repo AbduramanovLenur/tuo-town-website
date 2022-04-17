@@ -1,0 +1,99 @@
+@import "mixins";
+
+.article {
+    background-color: var(--gray);
+    padding: 60px 0;
+    &__title {
+        @include title;
+        --size: 35px;
+        --height: 1.17;
+        --transform: none;
+        max-width: 700px;
+        margin-bottom: 37px;
+    }
+    &__posts {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+    &__post {
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        max-width: 380px;
+        &:nth-child(1) {
+            background-image: url("../assets/img/article-1.jpg");
+        }
+        &:nth-child(2) {
+            background-image: url("../assets/img/article-2.jpg");
+        }
+        &:nth-child(3) {
+            background-image: url("../assets/img/article-3.jpg");
+        }
+    }
+    &__link {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 465px;
+        padding: 22px 30px;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #ff0000;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            @include transition(0.5s);
+        }
+    }
+    &__date {
+        font-size: 14px;
+        line-height: 2;
+        text-align: right;
+    }
+    &__text {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.41;
+        max-width: 308px;
+        z-index: 20;
+    }
+}
+
+@media (hover: hover) {
+    .article {
+        &__post {
+            &:hover .article__link::before {
+                height: 20%;
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    .article {
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .article {
+        padding: 40px 0;
+        &__title {
+            --size: 30px;
+        }
+        &__posts {
+            flex-direction: column;
+        }
+        &__post {
+            max-width: 100%;
+        }
+    }
+}

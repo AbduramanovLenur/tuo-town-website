@@ -1,0 +1,38 @@
+@mixin transition($second) {
+    .dom-is-ready & {
+        transition: $second;
+    }
+}
+@mixin input {
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #272727;
+    border-radius: 6px;
+    width: 276px;
+    height: 60px;
+    padding: 20px 26px;
+    margin: 0 auto;
+    &::placeholder {
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        color: inherit;
+    }
+}
+
+@mixin title {
+    --family: "Jura";
+    --size: 32px;
+    --weight: 500;
+    --height: 1.18;
+    --transform: uppercase;
+
+    font-family: var(--family);
+    font-size: var(--size);
+    font-weight: var(--weight);
+    line-height: var(--height);
+    text-transform: var(--transform);
+}

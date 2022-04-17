@@ -1,0 +1,126 @@
+@import "mixins";
+
+::-webkit-scrollbar {
+    width: 1px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 50px;
+}
+.overlay {
+    &-menu {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        @include transition(1s);
+        &.is-active {
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+        &__inner {
+            position: relative;
+            background-image: url("../assets/img/overlay-bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            max-width: 500px;
+            height: 100%;
+            padding: 115px 0 0 48px;
+            overflow: auto;
+        }
+        &__list {
+            margin-bottom: 53px;
+            max-width: 369px;
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        &__text {
+            position: relative;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.22;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            max-width: 320px;
+            @include transition(1s);
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: #fff;
+                @include transition(1s);
+            }
+        }
+        &__info {
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+            &-text {
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 1.2;
+                text-transform: uppercase;
+                color: #ffffff;
+                opacity: 0.6;
+            }
+        }
+        &__back {
+            position: absolute;
+            top: 40px;
+            left: 48px;
+            font-size: 24px;
+        }
+    }
+}
+
+@media (hover: hover) {
+    .overlay {
+        &-menu {
+            &__text {
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .overlay-menu {
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 23px;
+            }
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__info {
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 540px) {
+    .overlay-menu {
+        &__text {
+            font-size: 16px;
+        }
+    }
+}

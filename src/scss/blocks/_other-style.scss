@@ -1,0 +1,35 @@
+@import "mixins";
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--black);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+    border-radius: 50px;
+}
+.btn {
+    padding: 16px 34px;
+    border: 1px solid var(--red);
+    border-radius: 27px;
+    @include transition(0.5s);
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+@media (hover: hover) {
+    .btn {
+        &:hover {
+            background-color: var(--red);
+        }
+    }
+}
+@media (max-width: 480px) {
+    .btn {
+        font-size: 15px;
+        padding: 16px 34px;
+    }
+}

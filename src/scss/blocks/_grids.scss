@@ -1,0 +1,110 @@
+@import 'mixins';
+
+.grids {
+    background-color: var(--gray);
+    padding: 30px 0;
+    border-bottom: 1px solid #535353;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    &__item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 630px;
+        border-radius: 15px;
+        &:nth-child(1) {
+            background-image: url("../assets/img/intro-knives-6.jpg");
+        }
+        &:nth-child(2) {
+            background-image: url("../assets/img/knives-intro-1.jpg");
+        }
+        &:nth-child(3) {
+            background-image: url("../assets/img/knives-intro-2.jpg");
+        }
+        &:nth-child(4) {
+            background-image: url("../assets/img/knives-intro-3.jpg");
+        }
+        &:nth-child(5) {
+            background-image: url("../assets/img/knives-intro-4.jpg");
+        }
+        &:nth-child(6) {
+            background-image: url("../assets/img/intro-knives-5.jpg");
+        }
+    }
+    &__link {
+        display: block;
+        position: relative;
+        min-height: 514px;
+    }
+    &__box-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        bottom: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 0 28px 5px 28px;
+        max-width: 574px;
+    }
+    &__text {
+        font-weight: 600;
+        max-width: 520px;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            margin: 0 28px;
+            @include transition(1s);
+        }
+    }
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        @include transition(0.5s);
+    }
+}
+
+@media (hover: hover) {
+    .grids {
+        &__item {
+            &:hover .grids__text::before {
+                width: 71%;
+            }
+            &:hover .grids__arrow {
+                background-color: #ff0000;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .grids {
+        &__link {
+            min-height: 354px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .grids {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

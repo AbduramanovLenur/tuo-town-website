@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --default-fz: 16px;
+    --grid-padding: 15px;
+    --white: #fff;
+    --black: #000;
+    --ligth-gray: #878787;
+    --middle-gray: #303030;
+    --gray: #373737;
+    --dark-gray: #272727;
+    --red: #ff0000;
+}
+body {
+    font-family: "Montserrat";
+    // font-family: "Jura";
+    font-size: var(--default-fz);
+    font-weight: 400;
+    line-height: 1.375;
+    color: var(--white);
+}
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.container {
+    max-width: 1228px;
+    margin: 0 auto;
+    padding-left: var(--grid-padding);
+    padding-right: var(--grid-padding);
+}
+main {
+    flex: 1;
+    overflow-x: hidden;
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+input {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+address {
+    font-style: normal;
+}
+a,
+button {
+    display: inline-flex;
+}
+@import "blocks/*.scss";

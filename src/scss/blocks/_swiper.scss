@@ -1,0 +1,47 @@
+// .swiper {
+//     max-width: calc(100vw - var(--grid-padding) * 2);
+// }
+.intro-swiper {
+    height: 100%;
+}
+.intro-button {
+    &-prev,
+    &-next {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        top: 80%;
+    }
+    &-prev {
+        left: 10%;
+        background-image: url("../assets/img/arrow-left.png");
+        background-position: center;
+        &::after {
+            display: none;
+        }
+    }
+    &-next {
+        right: 10%;
+        background-image: url("../assets/img/arrow-right.png");
+        background-position: center;
+        &::after {
+            display: none;
+        }
+    }
+}
+.swiper-pagination-bullet {
+    background-color: #ff0000;
+}
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+@media (max-width: 480px) {
+    .intro-button {
+        &-prev,
+        &-next {
+            top: 86%;
+        }
+    }
+}

@@ -1,0 +1,347 @@
+@import "mixins";
+
+.knives {
+    background-color: var(--gray);
+    padding: 60px 0 25px;
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        gap: 30px;
+    }
+    &__content {
+        @include transition(1s);
+    }
+    &__tab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 201px;
+        cursor: pointer;
+        &.is-active {
+            .knives__tab-text {
+                color: #ff0000;
+            }
+        }
+        &-ico {
+            margin-bottom: 31px;
+            cursor: pointer;
+        }
+        &-images {
+            cursor: pointer;
+            height: 46px;
+        }
+        &-text {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.23;
+            opacity: 0.4;
+            cursor: pointer;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 18px 25px;
+        &-box {
+            &--position {
+                grid-column-end: span 2;
+            }
+        }
+    }
+    &__welcome {
+        &-wrapper {
+            position: relative;
+            max-width: 590px;
+            min-height: 481px;
+        }
+        &-picture {
+            height: 100%;
+        }
+        &-images {
+            border-radius: 16px;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-descr {
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            max-width: 536px;
+            width: 100%;
+            padding: 0 20px;
+        }
+        &-text {
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.64;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: #fff;
+                margin: 0 20px;
+                @include transition(1s);
+            }
+        }
+        &-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            @include transition(0.5s);
+        }
+    }
+    &__wrapper {
+        max-width: 286px;
+        width: 100%;
+    }
+    &__picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: var(--dark-gray);
+        border-radius: 14px;
+        overflow: hidden;
+        min-height: 412px;
+        height: 100%;
+        margin-bottom: 12px;
+    }
+    &__info {
+        max-width: 286px;
+        &-box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+    &__name {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 2;
+        max-width: 286px;
+    }
+    &__price {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2;
+        opacity: 0.5;
+        margin-right: 28px;
+    }
+    &__status {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2;
+        color: #ff0000;
+    }
+    &__plus {
+        &-btn {
+            position: absolute;
+            top: 18px;
+            right: 15px;
+            border-radius: 50%;
+            @include transition(0.5s);
+            &:disabled {
+                opacity: 0.4;
+            }
+        }
+        &-ico {
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 37px;
+            height: 37px;
+            cursor: pointer;
+        }
+    }
+    &__instagram {
+        &-wrapper {
+            position: relative;
+            max-width: 286px;
+            min-height: 412px;
+        }
+        &-picture {
+            height: 100%;
+            min-height: 412px;
+        }
+        &-images {
+            border-radius: 14px;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-box {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 37px;
+            right: 31px;
+            i {
+                font-size: 20px;
+            }
+        }
+        &-text {
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.64;
+            margin-left: 18px;
+            text-transform: uppercase;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: #fff;
+                @include transition(0.5s);
+            }
+        }
+    }
+}
+
+@media (hover: hover) {
+    .knives {
+        &__welcome {
+            &-wrapper {
+                &:hover .knives__welcome-arrow {
+                    background-color: #ff0000;
+                }
+                &:hover .knives__welcome-text::before {
+                    width: 81%;
+                }
+            }
+        }
+        &__instagram {
+            &-wrapper {
+                &:hover .knives__instagram-text::before {
+                    width: 100%;
+                }
+            }
+        }
+        &__wrapper {
+            &:hover .knives__plus-btn:not([disabled]) {
+                background-color: #ff0000;
+            }
+        }
+        &__plus {
+            &-btn {
+                &:not([disabled]) .knives__plus-ico:hover::before {
+                    content: "\f290";
+                }
+            }
+        }
+    }
+}
+// @media (max-width: 1152px) {
+//     .knives {
+//         &__plus {
+//             &-btn {
+//                 top: 18px;
+//                 right: 15px;
+//             }
+//         }
+//     }
+// }
+@media (max-width: 1024px) {
+    .knives {
+        &__welcome {
+            &-wrapper {
+                min-height: 380px;
+            }
+        }
+        &__picture {
+            min-height: 320px;
+        }
+        &__instagram {
+            &-wrapper {
+                min-height: 320px;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .knives {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__picture {
+            min-height: 350px;
+        }
+        &__instagram {
+            &-wrapper {
+                min-height: 350px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .knives {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            &-box {
+                margin: 0 auto;
+            }
+        }
+        &__tab {
+            &-text {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .knives {
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+            &-box {
+                &:first-child {
+                    grid-column-end: initial;
+                }
+            }
+        }
+        &__welcome,
+        &__instagram {
+            &-wrapper {
+                max-width: 250px;
+            }
+        }
+        &__welcome {
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .knives {
+        &__tabs {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 384px) {
+    .knives {
+        &__tabs {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

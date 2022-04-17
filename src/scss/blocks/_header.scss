@@ -1,0 +1,126 @@
+@import "mixins";
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: rgba(33, 33, 33, 0.8);
+    backdrop-filter: blur(11px);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    z-index: 100;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        // gap: 10px;
+    }
+    &__logo {
+        flex-shrink: 0;
+        margin: 0 auto;
+    }
+    &__phones {
+        display: none;
+        margin-right: 23px;
+    }
+    &__ico {
+        &-dots,
+        &-search,
+        &-mail {
+            margin-right: 23px;
+            cursor: pointer;
+        }
+        &-shop {
+            &.is-active {
+                color: #ff0000;
+            }
+        }
+        &-location {
+            margin-right: 36px;
+            cursor: pointer;
+        }
+        &-mail {
+            font-weight: 300;
+        }
+        &-shop {
+            cursor: pointer;
+        }
+        &-dots,
+        &-shop,
+        &-mail,
+        &-location,
+        &-search {
+            @include transition(0.5s);
+        }
+        &--fz {
+            font-size: 24px;
+        }
+    }
+    &__phone {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+        @include transition(0.5s);
+    }
+}
+
+@media (hover: hover) {
+    .header {
+        &__ico {
+            &-dots,
+            &-shop,
+            &-mail,
+            &-location,
+            &-search {
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        background-color: var(--black);
+        &__phones {
+            display: block;
+        }
+        &__phone {
+            display: none;
+        }
+    }
+}
+@media (max-width: 540px) {
+    .header {
+        &__ico {
+            &-location {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        &__ico {
+            &-mail {
+                display: none;
+            }
+            &--fz {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 384px) {
+    .header {
+        &__ico {
+            &-search {
+                display: none;
+            }
+        }
+        &__logo {
+            order: 3;
+            margin: 0 0 0 auto;
+        }
+    }
+}

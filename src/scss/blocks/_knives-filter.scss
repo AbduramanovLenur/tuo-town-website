@@ -1,0 +1,82 @@
+@import "mixins";
+
+.knives-filter {
+    background-color: var(--gray);
+    padding: 50px 0 100px;
+    border-bottom: 1px solid #535353;
+    &__title {
+        @include title;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    &__accordion {
+        flex: 0 0 25%;
+    }
+    &__content {
+        flex: 0 1 75%;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__text {
+        color: #adacac;
+        border-bottom: 1px solid #4F4F4F;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        &.is-active {
+            color: #fff;
+        }
+    }
+    &__list {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        @include transition(1s);
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+            margin-bottom: 30px;
+        }
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 1.42;
+            color: #ADACAC;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+    .knives-filter {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .knives-filter {
+        &__title {
+            justify-content: flex-start;
+        }
+        &__box {
+            flex-direction: column;
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+@import "mixins";
+
+.header {
+    &__basket {
+        position: relative;
+        &-box {
+            position: absolute;
+            top: 194%;
+            right: 0;
+            background-color: #5d3232;
+            width: 560px;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(0.8s);
+            &.is-active {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &-list {
+            overflow: auto;
+            max-height: 350px;
+        }
+        &-empty {
+            font-family: "Jura";
+            font-weight: 500;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+            text-transform: uppercase;
+            &.is-active {
+                display: none;
+            }
+        }
+        &-item {
+            cursor: pointer;
+            @include transition(0.5s);
+            &:not(:last-child) {
+                border-bottom: 1px solid rgb(66, 53, 53);
+            }
+        }
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+            cursor: pointer;
+        }
+        &-wrapper {
+            display: flex;
+            gap: 15px;
+        }
+        &-knives {
+            &-name {
+                font-family: "Jura";
+                font-size: 15px;
+                max-width: 250px;
+                margin-right: auto;
+                cursor: pointer;
+            }
+            &-price {
+                font-family: "Jura";
+                font-size: 15px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #371e1e;
+        }
+        &-text {
+            font-family: "Jura";
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        &-total-price {
+            font-family: "Jura";
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        &-button {
+            font-family: "Jura";
+            font-size: 17px;
+            font-weight: 500;
+            color: #fff;
+            background-color: rgb(80, 139, 226);
+            padding: 10px 15px;
+            border-radius: 20px;
+            @include transition(0.5s);
+        }
+    }
+}
+
+@media (hover: hover) {
+    .header {
+        &__basket {
+            &-item {
+                &:hover {
+                    background-color: rgb(107, 32, 32);
+                }
+            }
+            &-button {
+                &:hover {
+                    background-color: #357694;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__basket {
+            &-box {
+                width: 381px;
+            }
+            &-inner {
+                padding: 15px 10px;
+            }
+            &-wrapper {
+                gap: 6px;
+            }
+            &-knives {
+                &-name,
+                &-price {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

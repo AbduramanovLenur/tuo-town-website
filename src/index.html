@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>TuoTown</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__inner">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <i class="fa-solid fa-location-dot header__ico-location header__ico--fz"></i>
+                <a class="header__phones" href="tel:+89811201117">
+                    <i class="fa-solid fa-phone header__ico-phone header__ico--fz"></i>
+                </a>
+                <a class="header__phone" href="tel:+89811201117">
+                    8 981 120-11-17
+                </a>
+                <div class="header__logo">
+                    <a class="header__logo-link" href="index.html">
+                        <img class="logo" src="assets/img/logo.png" width="146" height="35" alt="logo" loading="lazy">
+                    </a>
+                </div>
+                <i class="fa-solid fa-envelope header__ico-mail header__ico--fz"></i>
+                <i class="fa-solid fa-magnifying-glass header__ico-search header__ico--fz"></i>
+                <div class="header__basket">
+                    <button class="header__ico-btn" type="button">
+                        <i class="fa-solid fa-bag-shopping header__ico-shop header__ico--fz"></i>
+                    </button>
+                    <div class="header__basket-box">
+                        <ul class="header__basket-list"></ul>
+                        <p class="header__basket-empty">
+                            Пока нет товаров
+                        </p>
+                        <div class="header__basket-info">
+                            <div class="knives__basket-price">
+                                <p class="header__basket-text">
+                                    К оплате:
+                                </p>
+                                <p class="header__basket-total-price">
+                                    0 тыс. р.
+                                </p>
+                            </div>
+                            <div class="header__basket-buttons">
+                                <a href="services.html" class="header__basket-button">
+                                    Отравить заявку
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="intro">
+                <div class="swiper intro-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="intro__box">
+                                <div class="container">
+                                    <h1 class="intro__title">
+                                        Исключительное качество без компромиссов
+                                    </h1>
+                                    <p class="intro__text">
+                                        Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                                    </p>
+                                    <button class="intro__btn btn" type="button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="intro__box">
+                                <div class="container">
+                                    <h1 class="intro__title">
+                                        Исключительное качество без компромиссов
+                                    </h1>
+                                    <p class="intro__text">
+                                        Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                                    </p>
+                                    <button class="intro__btn btn" type="button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="intro__box">
+                                <div class="container">
+                                    <h1 class="intro__title">
+                                        Исключительное качество без компромиссов
+                                    </h1>
+                                    <p class="intro__text">
+                                        Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                                    </p>
+                                    <button class="intro__btn btn" type="button">
+                                        ПОДРОБНЕЕ
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <button class="swiper-button-prev intro-button-prev" type="button"></button>
+                    <button class="swiper-button-next intro-button-next" type="button"></button>
+                </div>
+            </section>
+            <div class="knives">
+                <div class="container knives__inner">
+                    <div class="knives__tabs" data-js-tab-parent>
+                        <div class="knives__tab" data-js-tab>
+                            <div class="knives__tab-ico">
+                                <img class="knives__tab-images" src="assets/img/knives-tab-1.svg" width="46" height="46"
+                                    alt="ico" loading="lazy">
+                            </div>
+                            <p class="knives__tab-text">
+                                Кухонные ножи
+                            </p>
+                        </div>
+                        <div class="knives__tab" data-js-tab>
+                            <div class="knives__tab-ico">
+                                <img class="knives__tab-images" src="assets/img/knives-tab-2.svg" width="46" height="46"
+                                    alt="ico" loading="lazy">
+                            </div>
+                            <p class="knives__tab-text">
+                                Складные ножи
+                            </p>
+                        </div>
+                        <div class="knives__tab" data-js-tab>
+                            <div class="knives__tab-ico">
+                                <img class="knives__tab-images" src="assets/img/knives-tab-3.svg" width="46" height="46"
+                                    alt="ico" loading="lazy">
+                            </div>
+                            <p class="knives__tab-text">
+                                Точилки для ножей
+                            </p>
+                        </div>
+                        <div class="knives__tab" data-js-tab>
+                            <div class="knives__tab-ico">
+                                <img class="knives__tab-images" src="assets/img/knives-tab-4.svg" width="46" height="46"
+                                    alt="ico" loading="lazy">
+                            </div>
+                            <p class="knives__tab-text">
+                                Аксессуары для кухни
+                            </p>
+                        </div>
+                    </div>
+                    <div class="knives__contents">
+                        <div class="knives__content animated fadeIn" data-js-tab-content>
+                            <div class="knives__grid">
+                                <div class="knives__grid-box knives__grid-box--position">
+                                    <a class="knives__welcome-link" href="knives.html">
+                                        <div class="knives__welcome-wrapper">
+                                            <div class="knives__welcome-picture">
+                                                <img class="knives__welcome-images" src="assets/img/picture-1.jpg"
+                                                    width="630" height="514" alt="picture" loading="lazy">
+                                            </div>
+                                            <div class="knives__welcome-descr">
+                                                <p class="knives__welcome-text">
+                                                    Познакомьтесь с коллекцией ножей TUOTOWN
+                                                </p>
+                                                <i class="knives__welcome-arrow fa-solid fa-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-1.png" width="264"
+                                                height="235" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож SQ01-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Новинка
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-2.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-3.png" width="235"
+                                                height="209" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож SQ01-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Новинка
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <a class="knives__instagram-link" href="#">
+                                        <div class="knives__instagram-wrapper">
+                                            <div class="knives__instagram-picture">
+                                                <img class="knives__instagram-images" src="assets/img/picture-2.jpg" width="286" height="412"
+                                                    alt="picture" loading="lazy">
+                                            </div>
+                                            <div class="knives__instagram-box">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <p class="knives__instagram-text">
+                                                    INSTAGRAM
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="knives__content animated fadeIn" data-js-tab-content>
+                            <div class="knives__grid">
+                                <div class="knives__grid-box knives__grid-box--position">
+                                    <a class="knives__welcome-link" href="#">
+                                        <div class="knives__welcome-wrapper">
+                                            <div class="knives__welcome-picture">
+                                                <img class="knives__welcome-images" src="assets/img/picture-1.jpg"
+                                                    width="630" height="514" alt="picture" loading="lazy">
+                                            </div>
+                                            <div class="knives__welcome-descr">
+                                                <p class="knives__welcome-text">
+                                                    Познакомьтесь с коллекцией ножей TUOTOWN
+                                                </p>
+                                                <i class="knives__welcome-arrow fa-solid fa-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-1.png" width="264"
+                                                height="235" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож SQ01-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Новинка
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-2.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-3.png" width="235"
+                                                height="209" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож SQ01-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Новинка
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <a class="knives__instagram-link" href="#">
+                                        <div class="knives__instagram-wrapper">
+                                            <div class="knives__instagram-picture">
+                                                <img class="knives__instagram-images" src="assets/img/picture-2.jpg"
+                                                    alt="picture">
+                                            </div>
+                                            <div class="knives__instagram-box">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <p class="knives__instagram-text">
+                                                    INSTAGRAM
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="knives__content animated fadeIn" data-js-tab-content>
+                            <div class="knives__grid">
+                                <div class="knives__grid-box knives__grid-box--position">
+                                    <a class="knives__welcome-link" href="#">
+                                        <div class="knives__welcome-wrapper">
+                                            <div class="knives__welcome-picture">
+                                                <img class="knives__welcome-images" src="assets/img/picture-1.jpg"
+                                                    width="630" height="514" alt="picture" loading="lazy">
+                                            </div>
+                                            <div class="knives__welcome-descr">
+                                                <p class="knives__welcome-text">
+                                                    Познакомьтесь с коллекцией ножей TUOTOWN
+                                                </p>
+                                                <i class="knives__welcome-arrow fa-solid fa-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-1.png" width="264"
+                                                height="235" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож SQ01-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Новинка
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-2.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-3.png" width="235"
+                                                height="209" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож SQ01-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Новинка
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <a class="knives__instagram-link" href="#">
+                                        <div class="knives__instagram-wrapper">
+                                            <div class="knives__instagram-picture">
+                                                <img class="knives__instagram-images" src="assets/img/picture-2.jpg"
+                                                    alt="picture">
+                                            </div>
+                                            <div class="knives__instagram-box">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <p class="knives__instagram-text">
+                                                    INSTAGRAM
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="knives__content animated fadeIn" data-js-tab-content>
+                            <div class="knives__grid">
+                                <div class="knives__grid-box knives__grid-box--position">
+                                    <a class="knives__welcome-link" href="#">
+                                        <div class="knives__welcome-wrapper">
+                                            <div class="knives__welcome-picture">
+                                                <img class="knives__welcome-images" src="assets/img/picture-1.jpg"
+                                                    width="630" height="514" alt="picture" loading="lazy">
+                                            </div>
+                                            <div class="knives__welcome-descr">
+                                                <p class="knives__welcome-text">
+                                                    Познакомьтесь с коллекцией ножей TUOTOWN
+                                                </p>
+                                                <i class="knives__welcome-arrow fa-solid fa-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-1.png" width="264"
+                                                height="235" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож SQ01-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Новинка
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-2.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-3.png" width="235"
+                                                height="209" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож SQ01-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Новинка
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <a class="knives__instagram-link" href="#">
+                                        <div class="knives__instagram-wrapper">
+                                            <div class="knives__instagram-picture">
+                                                <img class="knives__instagram-images" src="assets/img/picture-2.jpg" width="286" height="412"
+                                                    alt="picture" loading="lazy">
+                                            </div>
+                                            <div class="knives__instagram-box">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <p class="knives__instagram-text">
+                                                    INSTAGRAM
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="knives__grid-box">
+                                    <div class="knives__wrapper">
+                                        <div class="knives__picture">
+                                            <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                height="127" alt="picture" loading="lazy">
+                                            <button class="knives__plus-btn" type="button">
+                                                <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div class="knives__info">
+                                            <p class="knives__name">
+                                                Складной нож JJ001-TUO-B
+                                            </p>
+                                            <div class="knives__info-box">
+                                                <p class="knives__price">
+                                                    12 850 р.
+                                                </p>
+                                                <p class="knives__status">
+                                                    Популярное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="new-knives">
+                <div class="container new-knives__inner">
+                    <h2 class="new-knives__title">
+                        Узнавайте первым о новинках и новостях
+                    </h2>
+                    <form class="new-knives__form">
+                        <input class="new-knives__input" type="mail" required placeholder="Ваш e-mail">
+                    </form>
+                    <div class="knives__content">
+                        <div class="knives__grid">
+                            <div class="knives__grid-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                <div class="knives__wrapper">
+                                    <div class="knives__picture">
+                                        <img class="knives__images" src="assets/img/knives-1.png" width="264"
+                                            height="235" alt="picture" loading="lazy">
+                                        <button class="knives__plus-btn" type="button">
+                                            <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="knives__info">
+                                        <p class="knives__name">
+                                            Складной нож SQ01-B
+                                        </p>
+                                        <div class="knives__info-box">
+                                            <p class="knives__price">
+                                                850 р.
+                                            </p>
+                                            <p class="knives__status">
+                                                Новинка
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="knives__grid-box" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                <div class="knives__wrapper">
+                                    <div class="knives__picture">
+                                        <img class="knives__images" src="assets/img/knives-2.png" width="240"
+                                            height="127" alt="picture" loading="lazy">
+                                        <button class="knives__plus-btn" type="button">
+                                            <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="knives__info">
+                                        <p class="knives__name">
+                                            Складной нож JJ001-TUO-B
+                                        </p>
+                                        <div class="knives__info-box">
+                                            <p class="knives__price">
+                                                12 850 р.
+                                            </p>
+                                            <p class="knives__status">
+                                                Популярное
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="knives__grid-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                <div class="knives__wrapper">
+                                    <div class="knives__picture">
+                                        <img class="knives__images" src="assets/img/knives-3.png" width="235"
+                                            height="209" alt="picture" loading="lazy">
+                                        <button class="knives__plus-btn" type="button">
+                                            <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="knives__info">
+                                        <p class="knives__name">
+                                            Складной нож SQ01-B
+                                        </p>
+                                        <div class="knives__info-box">
+                                            <p class="knives__price">
+                                                850 р.
+                                            </p>
+                                            <p class="knives__status">
+                                                Новинка
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="knives__grid-box" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                <div class="knives__wrapper">
+                                    <div class="knives__picture">
+                                        <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                            height="127" alt="picture" loading="lazy">
+                                        <button class="knives__plus-btn" type="button">
+                                            <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="knives__info">
+                                        <p class="knives__name">
+                                            Складной нож JJ001-TUO-B
+                                        </p>
+                                        <div class="knives__info-box">
+                                            <p class="knives__price">
+                                                12 850 р.
+                                            </p>
+                                            <p class="knives__status">
+                                                Популярное
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="tab-services">
+                <div class="container tab-services__inner">
+                    <div class="tab-services__box" data-js-tabservices-parent>
+                        <div class="tab-services__tabs">
+                            <div class="tab-services__tab" data-js-tabservices data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                НОВИНКИ
+                            </div>
+                            <div class="tab-services__tab" data-js-tabservices data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                ПОПУЛЯРНОЕ
+                            </div>
+                        </div>
+                        <div class="tab-services__contents">
+                            <div class="tab-services__content animated fadeIn" data-js-tabservices-content>
+                                <div class="knives__grid">
+                                    <div class="knives__grid-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                        <div class="knives__wrapper">
+                                            <div class="knives__picture">
+                                                <img class="knives__images" src="assets/img/knives-1.png" width="264"
+                                                    height="235" alt="picture" loading="lazy">
+                                                <button class="knives__plus-btn" type="button">
+                                                    <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <div class="knives__info">
+                                                <p class="knives__name">
+                                                    Складной нож SQ01-B
+                                                </p>
+                                                <div class="knives__info-box">
+                                                    <p class="knives__price">
+                                                        850 р.
+                                                    </p>
+                                                    <p class="knives__status">
+                                                        Новинка
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="knives__grid-box" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                        <div class="knives__wrapper">
+                                            <div class="knives__picture">
+                                                <img class="knives__images" src="assets/img/knives-2.png" width="240"
+                                                    height="127" alt="picture" loading="lazy">
+                                                <button class="knives__plus-btn" type="button">
+                                                    <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <div class="knives__info">
+                                                <p class="knives__name">
+                                                    Складной нож JJ001-TUO-B
+                                                </p>
+                                                <div class="knives__info-box">
+                                                    <p class="knives__price">
+                                                        12 850 р.
+                                                    </p>
+                                                    <p class="knives__status">
+                                                        Новинка
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="knives__grid-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                        <div class="knives__wrapper">
+                                            <div class="knives__picture">
+                                                <img class="knives__images" src="assets/img/knives-3.png" width="235"
+                                                    height="209" alt="picture" loading="lazy">
+                                                <button class="knives__plus-btn" type="button">
+                                                    <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <div class="knives__info">
+                                                <p class="knives__name">
+                                                    Складной нож SQ01-B
+                                                </p>
+                                                <div class="knives__info-box">
+                                                    <p class="knives__price">
+                                                        850 р.
+                                                    </p>
+                                                    <p class="knives__status">
+                                                        Новинка
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="knives__grid-box" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                        <div class="knives__wrapper">
+                                            <div class="knives__picture">
+                                                <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                    height="127" alt="picture" loading="lazy">
+                                                <button class="knives__plus-btn" type="button">
+                                                    <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <div class="knives__info">
+                                                <p class="knives__name">
+                                                    Складной нож JJ001-TUO-B
+                                                </p>
+                                                <div class="knives__info-box">
+                                                    <p class="knives__price">
+                                                        12 850 р.
+                                                    </p>
+                                                    <p class="knives__status">
+                                                        Новинка
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-services__content animated fadeIn" data-js-tabservices-content>
+                                <div class="knives__grid">
+                                    <div class="knives__grid-box">
+                                        <div class="knives__wrapper">
+                                            <div class="knives__picture">
+                                                <img class="knives__images" src="assets/img/knives-1.png" width="264"
+                                                    height="235" alt="picture" loading="lazy">
+                                                <button class="knives__plus-btn" type="button">
+                                                    <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <div class="knives__info">
+                                                <p class="knives__name">
+                                                    Складной нож SQ01-B
+                                                </p>
+                                                <div class="knives__info-box">
+                                                    <p class="knives__price">
+                                                        850 р.
+                                                    </p>
+                                                    <p class="knives__status">
+                                                        Популярное
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="knives__grid-box">
+                                        <div class="knives__wrapper">
+                                            <div class="knives__picture">
+                                                <img class="knives__images" src="assets/img/knives-2.png" width="240"
+                                                    height="127" alt="picture" loading="lazy">
+                                                <button class="knives__plus-btn" type="button">
+                                                    <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <div class="knives__info">
+                                                <p class="knives__name">
+                                                    Складной нож JJ001-TUO-B
+                                                </p>
+                                                <div class="knives__info-box">
+                                                    <p class="knives__price">
+                                                        12 850 р.
+                                                    </p>
+                                                    <p class="knives__status">
+                                                        Популярное
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="knives__grid-box">
+                                        <div class="knives__wrapper">
+                                            <div class="knives__picture">
+                                                <img class="knives__images" src="assets/img/knives-3.png" width="235"
+                                                    height="209" alt="picture" loading="lazy">
+                                                <button class="knives__plus-btn" type="button">
+                                                    <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <div class="knives__info">
+                                                <p class="knives__name">
+                                                    Складной нож SQ01-B
+                                                </p>
+                                                <div class="knives__info-box">
+                                                    <p class="knives__price">
+                                                        850 р.
+                                                    </p>
+                                                    <p class="knives__status">
+                                                        Популярное
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="knives__grid-box">
+                                        <div class="knives__wrapper">
+                                            <div class="knives__picture">
+                                                <img class="knives__images" src="assets/img/knives-4.png" width="240"
+                                                    height="127" alt="picture" loading="lazy">
+                                                <button class="knives__plus-btn" type="button">
+                                                    <i class="knives__plus-ico fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                            <div class="knives__info">
+                                                <p class="knives__name">
+                                                    Складной нож JJ001-TUO-B
+                                                </p>
+                                                <div class="knives__info-box">
+                                                    <p class="knives__price">
+                                                        12 850 р.
+                                                    </p>
+                                                    <p class="knives__status">
+                                                        Популярное
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="info">
+                <div class="container info__inner">
+                    <div class="info__box">
+                        <div class="info__picture" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img class="info__images" src="assets/img/info-picture.jpg" width="300" height="289"
+                                alt="images" loading="lazy">
+                        </div>
+                        <div class="info__content">
+                            <h2 class="info__title-descr">
+                                «Tuotown» – легендарные ножи, создающие шедевры
+                            </h2>
+                            <p class="info__text-descr">
+                                Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей,
+                                изготовленных лучшими мастерами Восточной Азии с применением передового европейского
+                                оборудования и современных материалов. Они отличаются идеальным балансом и
+                                фантастической остротой. Сочетают в себе вековые традиции и новейшие разработки. Также
+                                предлагаем широкий ассортимент сопутствующих товаров.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info__box">
+                        <div class="info__content">
+                            <p class="info__text-companie">
+                                Истинная красота ножа — совершённая функциональность и визуальная гармония. Этот предмет
+                                издревле сопутствовал человеку: от зари цивилизации до сегодняшних дней. На протяжении
+                                всей истории человечества он был верным помощником, незаменимым инструментом и грозным
+                                оружием. Предлагаем изделия Hi-end качества по доступным ценам настоящим ценителям
+                                японских ножей.
+                            </p>
+                            <p class="info__text-companie">
+                                Отличительной чертой нашего интернет-магазина являются уникальные торговые предложения,
+                                эксклюзивность продукции, неизменно высокое качество и выгодные цены. Осуществляем
+                                продажи элитных японских кухонных ножей для профессионалов и любителей. В обширной
+                                ассортиментной линейке представлены изделия для различных потребностей и любого
+                                бюджета — от столовых приборов до шеф-ножей.
+                            </p>
+                            <h2 class="info__title-companie">
+                                Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                            </h2>
+                        </div>
+                        <div class="info__picture" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img class="info__images" src="assets/img/info-picture-2.jpg" width="300" height="362"
+                                alt="picture" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="article">
+                <div class="container article__inner">
+                    <h2 class="article__title" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                        Всё самое интересное о ножах
+                    </h2>
+                    <ul class="article__posts">
+                        <li class="article__post" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                            <div class="article__box">
+                                <a class="article__link" href="info.html">
+                                    <time class="article__date">
+                                        4 августа 2021 19:24
+                                    </time>
+                                    <p class="article__text">
+                                        Традиционные виды японских кухонных ножей
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="article__post" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                            <div class="article__box">
+                                <a class="article__link" href="info.html">
+                                    <time class="article__date">
+                                        4 августа 2021 19:24
+                                    </time>
+                                    <p class="article__text">
+                                        Всемирная история режущих клинков — взгляд в прошлое
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="article__post" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                            <div class="article__box">
+                                <a class="article__link" href="info.html">
+                                    <time class="article__date">
+                                        4 августа 2021 19:24
+                                    </time>
+                                    <p class="article__text">
+                                        Как ухаживать за японскими кухонными ножами?
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <div class="container">
+                        <ul class="footer__top-list">
+                            <li class="footer__top-item">
+                                <div class="footer__top-box">
+                                    <div class="footer__wrapper">
+                                        <div class="footer__pictures">
+                                            <a class="footer__link" href="#">
+                                                <img class="footer__images" src="assets/img/footer-logo.png" width="194"
+                                                    height="47" alt="images" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <p class="footer__subtext">
+                                            легендарные ножи, создающие шедевры
+                                        </p>
+                                    </div>
+                                    <p class="footer__text">
+                                        Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей,
+                                        изготовленных лучшими мастерами Восточной Азии с применением передового
+                                        европейского оборудования и современных материалов.
+                                        <br>
+                                        <br>
+                                        Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе
+                                        вековые традиции и новейшие разработки. Также предлагаем широкий ассортимент
+                                        сопутствующих товаров.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="footer__top-item">
+                                <div class="footer__top-box">
+                                    <h4 class="footer__title">
+                                        Информация
+                                    </h4>
+                                    <ul class="footer__informations">
+                                        <li class="footer__information">
+                                            <a class="footer__information-link" href="#">
+                                                Главная
+                                            </a>
+                                        </li>
+                                        <li class="footer__information">
+                                            <a class="footer__information-link" href="#">
+                                                Новости
+                                            </a>
+                                        </li>
+                                        <li class="footer__information">
+                                            <a class="footer__information-link" href="#">
+                                                О компании
+                                            </a>
+                                        </li>
+                                        <li class="footer__information">
+                                            <a class="footer__information-link" href="#">
+                                                Контакты
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <h4 class="footer__title">
+                                        Каталог
+                                    </h4>
+                                    <ul class="footer__catalog">
+                                        <li class="footer__catalog-item">
+                                            <a class="footer__catalog-link" href="#">
+                                                Кухонные ножи
+                                            </a>
+                                        </li>
+                                        <li class="footer__catalog-item">
+                                            <a class="footer__catalog-link" href="#">
+                                                Складные ножи
+                                            </a>
+                                        </li>
+                                        <li class="footer__catalog-item">
+                                            <a class="footer__catalog-link" href="#">
+                                                Точилки для ножей
+                                            </a>
+                                        </li>
+                                        <li class="footer__catalog-item">
+                                            <a class="footer__catalog-link" href="#">
+                                                Аксессуары
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <h4 class="footer__title">
+                                        Мы в соцсетях
+                                    </h4>
+                                    <ul class="footer__social">
+                                        <li class="footer__social-item">
+                                            <a class="footer__social-link" href="#">
+                                                <i class="fa-brands fa-facebook-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="footer__social-item">
+                                            <a class="footer__social-link" href="#">
+                                                <i class="fa-brands fa-vk"></i>
+                                            </a>
+                                        </li>
+                                        <li class="footer__social-item">
+                                            <a class="footer__social-link" href="#">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="footer__social-item">
+                                            <a class="footer__social-link" href="#">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="footer__top-item">
+                                <div class="footer__top-box">
+                                    <h4 class="footer__contact-title">
+                                        Контактная информация
+                                    </h4>
+                                    <a class="footer__phone" href="tel:+79811201117">
+                                        +7 (981) 120-11-17
+                                    </a>
+                                    <a class="footer__mail" href="mailto:tuotown@mail.ru">
+                                        tuotown@mail.ru
+                                    </a>
+                                    <time class="footer__time">
+                                        08:00 — 18:00, ежедневно
+                                    </time>
+                                    <address class="footer__address">
+                                        Россия, Москва, МКАД, 19-й километр, <br>
+                                        вл20с1, вход Ф, 22-68-70
+                                    </address>
+                                    <div class="footer__picture">
+                                        <img class="footer__images" src="assets/img/image.jpg" width="87" height="31"
+                                            alt="images" loading="lazy">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="container">
+                        <div class="footer__copyright-inner">
+                            <p class="footer__copyright-text">
+                                TUOTOWN © 2021 Торговая марка TUOTOWN зарегистрирована. Все права защищены и принадлежат
+                                правообладателям.
+                            </p>
+                            <div class="footer__copyright-picture">
+                                <img class="footer__copyright-images" src="assets/img/copyright.png" width="156"
+                                    height="17" alt="images" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="overlay-menu">
+            <div class="overlay-menu__inner">
+                <ul class="overlay-menu__list">
+                    <li class="overlay-menu__item">
+                        <a class="overlay-mene__link" href="knives-filter.html">
+                            <p class="overlay-menu__text">
+                                Кухонные ножи TUOTOWN
+                            </p>
+                        </a>
+                    </li>
+                    <li class="overlay-menu__item">
+                        <a class="overlay-mene__link" href="knives-filter.html">
+                            <p class="overlay-menu__text">
+                                Складные ножи TUOTOWN
+                            </p>
+                        </a>
+                    </li>
+                    <li class="overlay-menu__item">
+                        <a class="overlay-mene__link" href="knives-filter.html">
+                            <p class="overlay-menu__text">
+                                Кухонные ножи QXF
+                            </p>
+                        </a>
+                    </li>
+                    <li class="overlay-menu__item">
+                        <a class="overlay-mene__link" href="knives-filter.html">
+                            <p class="overlay-menu__text">
+                                Точильные камни
+                            </p>
+                        </a>
+                    </li>
+                    <li class="overlay-menu__item">
+                        <a class="overlay-mene__link" href="knives-filter.html">
+                            <p class="overlay-menu__text">
+                                Наборы для BBQ
+                            </p>
+                        </a>
+                    </li>
+                    <li class="overlay-menu__item">
+                        <a class="overlay-mene__link" href="knives-filter.html">
+                            <p class="overlay-menu__text">
+                                Кухонные принадлежности
+                            </p>
+                        </a>
+                    </li>
+                    <li class="overlay-menu__item">
+                        <a class="overlay-mene__link" href="knives-filter.html">
+                            <p class="overlay-menu__text">
+                                Туристические товары
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <address class="overlay-menu__info">
+                    <ul class="overlay-menu__info-list">
+                        <li class="overlay-menu__info-item">
+                            <a class="overlay-menu__info-link" href="#">
+                                <p class="overlay-menu__info-text">Новости</p>
+                            </a>
+                        </li>
+                        <li class="overlay-menu__info-item">
+                            <a class="overlay-emnu__info-link" href="#">
+                                <p class="overlay-menu__info-text">О компании</p>
+                            </a>
+                        </li>
+                        <li class="overlay-menu__info-item">
+                            <a class="overlay-emnu__info-link" href="#">
+                                <p class="overlay-menu__info-text">Контакты</p>
+                            </a>
+                        </li>
+                        <li class="overlay-menu__info-item">
+                            <a class="overlay-emnu__info-link" href="#">
+                                <p class="overlay-menu__info-text">Как проехать</p>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+                <i class="overlay-menu__back fa-solid fa-chevron-left"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

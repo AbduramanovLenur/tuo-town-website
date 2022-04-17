@@ -1,0 +1,192 @@
+@import "mixins";
+
+.services {
+    background-color: var(--gray);
+    padding: 110px 0 90px;
+    &__title {
+        @include title;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    &__tabs {
+        margin-bottom: 60px;
+    }
+    &__tab {
+        &-btn {
+            font-size: 14px;
+            color: #adacac;
+            line-height: 1.21;
+            padding-bottom: 5px;
+            &.is-active {
+                color: #fff;
+                border-bottom: 3px solid #ff0000;
+            }
+        }
+    }
+    &__phone {
+        font-family: "Jura";
+        font-size: 24px;
+        line-height: 1.16;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 50px 10px 56px;
+        background-color: var(--white);
+        max-width: 1286px;
+        width: 100%;
+        border-radius: 15px;
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        max-width: 756px;
+    }
+    &__label {
+        &-theme,
+        &-mail,
+        &-name,
+        &-phone,
+        &-comment {
+            display: block;
+            font-size: 12px;
+            line-height: 1;
+            color: #4f4f4f;
+            opacity: 0.87;
+        }
+        &-theme,
+        &-mail,
+        &-name,
+        &-phone {
+            background: #f7f7f7;
+            border-radius: 5px;
+            max-width: 368px;
+            padding: 15px 20px;
+        }
+        &-comment {
+            grid-column-end: span 2;
+            max-width: 755px;
+        }
+    }
+    &__input {
+        &-theme,
+        &-mail,
+        &-name,
+        &-phone {
+            font-size: 16px;
+            line-height: 1.18;
+            color: #adacac;
+            display: block;
+            width: 300px;
+            height: 30px;
+            border-bottom: 2px solid #4f4f4f;
+            &::placeholder {
+                font-size: 16px;
+                line-height: 1.18;
+                color: #adacac;
+            }
+        }
+        &-comment {
+            font-size: 16px;
+            line-height: 1.18;
+            color: #adacac;
+            display: block;
+            width: 100%;
+            height: 182px;
+            resize: none;
+            background: #f7f7f7;
+            border-radius: 5px;
+            padding: 15px 23px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            &::placeholder {
+                font-size: 16px;
+                line-height: 1.18;
+                color: #adacac;
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #444444;
+        line-height: 1.21;
+        width: 165px;
+        height: 49px;
+        padding: 16px 34px;
+        border: 2px solid #c80000;
+        border-radius: 27px;
+        text-transform: uppercase;
+        grid-column-end: span 2;
+        margin: 0 auto;
+        @include transition(0.5s);
+    }
+    &__empty {
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 120px;
+    }
+}
+@media (hover: hover) {
+    .services {
+        &__button {
+            &:hover {
+                color: #fff;
+                background-color: #c80000;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .services {
+        padding: 110px 0;
+        &__input {
+            &-theme,
+            &-mail,
+            &-name,
+            &-phone {
+                width: 100%;
+            }
+        }
+        &__empty {
+            margin-top: 60px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .services {
+        &__tabs {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+}
+@media (max-width: 540px) {
+    .services {
+        &__form {
+            grid-template-columns: 1fr;
+        }
+        &__label {
+            &-comment {
+                grid-column-end: span 1;
+            }
+        }
+        &__button {
+            grid-column-end: span 1;
+        }
+    }
+}

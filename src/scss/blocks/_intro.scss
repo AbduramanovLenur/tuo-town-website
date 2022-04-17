@@ -1,0 +1,51 @@
+@import "mixins";
+
+.intro {
+    &__box {
+        padding: 181px 0;
+        background-image: url("../assets/img/main-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+    &__title {
+        @include title;
+        --size: 41px;
+        --weight: 400;
+        --height: 1.17;
+        max-width: 602px;
+        margin-bottom: 24px;
+    }
+    &__text {
+        max-width: 447px;
+        margin-bottom: 39px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        &__box {
+            background-image: url("../assets/img/mobile-bg.jpg");
+            padding: 135px 0 150px;
+        }
+        &__title {
+            --size: 38px;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 540px) {
+    .intro {
+        &__box {
+            padding: 130px 0;
+        }
+        &__title {
+            --size: 35px;
+            margin-bottom: 20px;
+        }
+        &__text {
+            margin-bottom: 30px;
+        }
+    }
+}
