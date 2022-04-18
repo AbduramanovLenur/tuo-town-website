@@ -1,4 +1,4 @@
-# Проект: "TuoTown"
+# Проект: "TuoTown":
 
 * Многостраничный сайт онлайн магазин кухонных ножей;
 * Сайт адаптирован по мониторы комьютеров, ноутбуков, планшетов и телефонов;
@@ -8,7 +8,7 @@
 
 <br>
 
-# Project: "TuoTown"
+# Project: "TuoTown":
 
 * Multipage website for an online shop of kitchen knives;
 * The site is adapted to the monitors of computers, laptops, tablets and phones;
