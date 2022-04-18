@@ -16,4 +16,4 @@
 * APIs used: FontAwesome, Swiper JS, AOS JS;
 * The site has 6 pages;
 
-# Ссылка на сайт/Link to website - https://abduramanovlenur.github.io/tuo-town-website/dist/index.html
+## Ссылка на сайт/Link to website - https://abduramanovlenur.github.io/tuo-town-website/dist/index.html
